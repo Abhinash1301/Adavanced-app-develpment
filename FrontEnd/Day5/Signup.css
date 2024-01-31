@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.abhi8 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container8 {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container8 .title8 {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container8 .title8::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content8 form.ruba .user-details8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.ruba .user-details8 .input-box8 {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.ruba .input-box8 span.details8 {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details8 .input-box8 input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details8 .input-box8 input:focus,
+.user-details8 .input-box8 input:valid {
+  border-color: #9b59b6;
+}
+
+.ruba .gender-details8 .gender-title8 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.ruba .category8 {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+.ruba .category8 label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ruba .category8 label .dot8 {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-18:checked ~ .category8 label .one8,
+#dot-28:checked ~ .category8 label .two8,
+#dot-38:checked ~ .category8 label .three8 {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+.ruba input[type="radio8"] {
+  display: none;
+}
+
+.ruba .button8 {
+  height: 45px;
+  margin: 35px 0;
+}
+
+.ruba .button8 input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #3d90c7, #9b59b6);
+}
+
+.ruba .button8 input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+.register-btn8{
+    height: 50px;
+    width: 120px;
+    margin-left: 260px;
+}
+
+@media(max-width: 584px) {
+  .container8 {
+    max-width: 100%;
+  }
+
+  .ruba .user-details8 .input-box8 {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .ruba .category8 {
+    width: 100%;
+  }
+
+  .content8 form .user-details8 {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details8::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media(max-width: 459px) {
+  .container8 .content8 .category8 {
+    flex-direction: column;
+  }
+}
